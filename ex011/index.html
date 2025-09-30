@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <hr>
+    <em>
+        <ins>
+            <p>Vamos aprender como fazer a imagem ficar boa em qualquer aparelho que precisar ou diminuindo a tela.</p>
+        </ins>
+    </em>
+    <br>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexivel">
+        <!--É sempre bom colocar pelo menos 50px a mais para não dar erro, e é muito importante fazer imagens de diferentes tamanhos para a pessoa não passar raiva no site.-->
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <hr>
+    <em>
+        <p>Vamos aprender a reproduzir áudios.</p>
+    </em>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta esse audio <a href="midia/guanacast-33.mp3">Clique aqui para baixar esse arquivo mp3</a> </p>
+    </audio>
+    <!--Não recomendo utilizar o áudio no estilo Wav.-->
+</body>
+</html>

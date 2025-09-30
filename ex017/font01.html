@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        body {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in, px
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+            16px= 1em
+            Recomendável utilizar px ou em.
+            */
+            font-size: 1em;
+        }
+        h1 {
+            /*
+            font-style > font-weight > font-size > font-family
+
+            Shorthand font
+            font-style: italic
+            font-weight: bold
+            font-size: 3em
+            font-family: 'Work Sans', sans-serif
+            */
+
+            text-shadow: 1px 1px 3px #111;
+            font: italic bold 3em 'Work Sans', sans-serif ;
+        }
+        h2 {
+          font: bold 2em 'Work Sans', sans-serif ;
+          text-shadow: 1px 1px 3px #111;
+        }
+        p {
+            text-decoration: underline;
+            
+        }
+    </style>
+</head>
+<body>
+    <ins>
+        <h1>Trabalhando com fontes</h1>
+    </ins>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta, vel, deleniti atque delectus veniam, ipsum explicabo suscipit a dicta accusantium quasi? Magnam non quia odio doloremque veniam enim quod. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam similique iure recusandae in. Ipsa maxime blanditiis quasi atque repudiandae perferendis aspernatur dolore, non eum porro, harum necessitatibus sunt, ex repellat!</p>
+    <ins>
+        <h2>Subtítulo do exercício</h2>
+    </ins>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit quod vel voluptatibus, facilis quidem iure veniam. Quisquam mollitia consequatur vel veritatis, ullam cupiditate vitae nesciunt vero reiciendis repudiandae veniam.</p>
+</body>
+</html>
